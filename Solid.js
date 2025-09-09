@@ -33,7 +33,7 @@ export function createStore(value) {
         subscribers.forEach(fn => fn());
     }
 
-    return [read, vite];
+    return [read, write];
 }
 
 export function createEffect(fn) {
